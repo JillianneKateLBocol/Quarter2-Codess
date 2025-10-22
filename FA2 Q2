@@ -1,0 +1,48 @@
+def calculate_delivery_fee():
+
+    try:
+
+        # Prompt user for inputs
+
+        distance = float(input("Enter distance in kilometers: "))
+
+        rate = float(input("Enter rate per kilometer (₱): "))
+
+        
+
+        # Validate input
+
+        if distance < 0 or rate < 0:
+
+            print("Distance and rate must be non-negative numbers.")
+
+            return
+
+
+
+
+        # Calculate total fee
+
+        total_fee = distance * rate
+
+
+
+
+        # Display result with 2 decimal places
+
+        print(f"Total Delivery Fee: ₱{total_fee:.2f}")
+
+    
+
+    except ValueError:
+
+        print("Please enter valid numeric inputs.")
+
+
+
+
+# Call the function
+
+cal
+
+culate_delivery_fee()
